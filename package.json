@@ -1,13 +1,13 @@
 {
   "name": "node-api",
   "version": "0.0.1",
-  "description": "Node js api. Sample for youtube course",
+  "description": "Elastic implementation example for node api",
   "repository": {
     "type": "git",
-    "url": "https://github.com/igormigunov/node-api"
+    "url": "https://github.com/igormigunov/elastic_example"
   },
   "bugs": {
-    "url": "https://github.com/igormigunov/node-api/issues"
+    "url": "https://github.com/igormigunov/elastic_example/issues"
   },
   "homepage": "https://www.youtube.com/",
   "keywords": [
@@ -54,13 +54,13 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "chai-http": "^3.0.0",
+    "chai-http": "^4.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "^3.1.2",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.4"
   },
   "engines": {
