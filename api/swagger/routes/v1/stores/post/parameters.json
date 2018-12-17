@@ -1,0 +1,26 @@
+[
+  {
+    "name": "body",
+    "in": "body",
+    "schema": {
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": " positive"
+        },
+        "name": {
+          "type": "string",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  }
+]

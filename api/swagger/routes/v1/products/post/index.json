@@ -1,0 +1,9 @@
+{
+  "tags": [
+    "products"
+  ],
+  "summary": "POST - /v1/products",
+  "produces": [
+    "application/json"
+  ]
+}

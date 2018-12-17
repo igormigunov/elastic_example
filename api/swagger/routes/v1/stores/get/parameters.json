@@ -1,0 +1,30 @@
+[
+  {
+    "name": "id",
+    "in": "query",
+    "description": " positive",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "name",
+    "in": "query",
+    "description": "",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "address",
+    "in": "query",
+    "description": "",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "phone",
+    "in": "query",
+    "description": "",
+    "type": "string",
+    "required": false
+  }
+]

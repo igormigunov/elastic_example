@@ -1,0 +1,22 @@
+[
+  {
+    "name": "body",
+    "in": "body",
+    "schema": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": ""
+        },
+        "description": {
+          "type": "string",
+          "description": ""
+        },
+        "quantity": {
+          "type": "number",
+          "description": ""
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Main Store",
+    "address": "60, Main Street",
+    "phone": "+1234567890"
+  },
+  {
+    "id": 2,
+    "name": "Just Big Store",
+    "address": "1, Second Street",
+    "phone": "+1234567891"
+  },
+  {
+    "id": 3,
+    "name": "Small Store",
+    "address": "10, Second Street",
+    "phone": "+1234567892"
+  },
+  {
+    "id": 4,
+    "name": "Tiny Store",
+    "address": "189, Main Street",
+    "phone": "+1234567893"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "airbnb/base"
+  ],
+  "plugins": [
+  ],
+  "rules": {
+    "no-underscore-dangle": "warn",
+    "consistent-return": 0,
+    "no-console": "off",
+    "import/no-unresolved": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+
+  }
+}

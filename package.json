@@ -1,0 +1,70 @@
+{
+  "name": "node-api",
+  "version": "0.0.1",
+  "description": "Node js api. Sample for youtube course",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igormigunov/node-api"
+  },
+  "bugs": {
+    "url": "https://github.com/igormigunov/node-api/issues"
+  },
+  "homepage": "https://www.youtube.com/",
+  "keywords": [
+    "api",
+    "nodejs",
+    "express",
+    "joi",
+    "swagger",
+    "docker",
+    "docker-compose"
+  ],
+  "author": "Igor Migunov <igormigunov42@gmail.com> (https://github.com/igormigunov)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint **/*.js",
+    "lint:fix": "./node_modules/.bin/eslint --fix **/*.js",
+    "pretest": "npm run lint",
+    "test": "node ./node_modules/mocha/bin/mocha tests",
+    "start": "node .",
+    "dev": "./node_modules/.bin/nodemon --inspect -r dotenv/config app.js dotenv_config_path=.env",
+    "yaml2json": "yaml2json api/swagger/swagger.yaml > api/swagger/swagger.json"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "bcrypt-promise": "^2.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.15.2",
+    "celebrate": "^7.0.4",
+    "compression": "^1.6.2",
+    "dotenv": "^4.0.0",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "express-boom": "^2.0.0",
+    "joi": "^10.6.0",
+    "joi-objectid": "^2.0.0",
+    "joigoose": "^2.0.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^4.6.6",
+    "mongoose-delete": "^0.4.0",
+    "mongoose-timestamp": "^0.6.0",
+    "morgan": "^1.9.0",
+    "node-api-swagger-docgen": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.18.4"
+  },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": "4.2.0"
+  }
+}

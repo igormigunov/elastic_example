@@ -1,0 +1,31 @@
+{
+  "all": 7,
+  "empty": {
+    "count": 1,
+    "list": [
+      "get /version"
+    ]
+  },
+  "completed": {
+    "count": 0,
+    "list": []
+  },
+  "withoutParams": {
+    "count": 1,
+    "list": [
+      "get /version"
+    ]
+  },
+  "withoutResponse": {
+    "count": 7,
+    "list": [
+      "get /version",
+      "get /v1/stores",
+      "post /v1/stores",
+      "get /v1/stores/{storeId}/",
+      "patch /v1/stores/{storeId}/",
+      "get /v1/products",
+      "post /v1/products"
+    ]
+  }
+}

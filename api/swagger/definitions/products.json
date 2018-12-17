@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "store": {
+      "$ref": "#/definitions/Store"
+    }
+  }
+}

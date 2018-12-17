@@ -1,0 +1,9 @@
+{
+  "tags": [
+    "stores"
+  ],
+  "summary": "PATCH - /v1/stores/{storeId}/",
+  "produces": [
+    "application/json"
+  ]
+}

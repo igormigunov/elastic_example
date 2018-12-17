@@ -1,0 +1,43 @@
+[
+  {
+    "name": "name",
+    "in": "query",
+    "description": "",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "store",
+    "in": "query",
+    "description": "Main Store, Just Big Store, Small Store, Tiny Store",
+    "type": "string",
+    "required": false,
+    "enum": [
+      "Main Store",
+      "Just Big Store",
+      "Small Store",
+      "Tiny Store"
+    ]
+  },
+  {
+    "name": "barcode",
+    "in": "query",
+    "description": " positive",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "quantity_from",
+    "in": "query",
+    "description": "",
+    "type": "number",
+    "required": false
+  },
+  {
+    "name": "quantity_to",
+    "in": "query",
+    "description": "",
+    "type": "number",
+    "required": false
+  }
+]
