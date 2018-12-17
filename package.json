@@ -39,6 +39,7 @@
     "celebrate": "^7.0.4",
     "compression": "^1.6.2",
     "dotenv": "^4.0.0",
+    "elasticsearch": "^15.2.0",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
     "express-boom": "^2.0.0",

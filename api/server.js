@@ -6,11 +6,15 @@ const boom = require('express-boom');
 const logger = require('morgan');
 const docgen = require('node-api-swagger-docgen');
 const { errors } = require('celebrate');
+const elasticsearch = require('elasticsearch');
 const config = require('../package.json');
 const storeRoute = require('./routes/stores');
 const productRoute = require('./routes/products');
 
+const client = new elasticsearch.Client({ host: 'localhost:9200' });
 const app = express();
+
+app.elasticClient = client;
 
 app.lib = {
   models: {
@@ -39,7 +43,7 @@ app.get('/', (req, res) => {
 });
 app.get('/version', (req, res) => res.send({ name: config.name, version: config.version }));
 app.use('/v1/stores', storeRoute);
-app.use('/v1/products', productRoute);
+app.use('/v1/products', productRoute(app));
 app.use(errors());
 app.use((req, res) => {
   res.boom.notFound();

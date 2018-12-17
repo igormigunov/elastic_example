@@ -1,5 +1,5 @@
 {
-  "all": 8,
+  "all": 10,
   "empty": {
     "count": 1,
     "list": [
@@ -17,7 +17,7 @@
     ]
   },
   "withoutResponse": {
-    "count": 8,
+    "count": 10,
     "list": [
       "get /version",
       "get /v1/stores",
@@ -26,7 +26,9 @@
       "get /v1/stores/{storeId}/",
       "patch /v1/stores/{storeId}/",
       "get /v1/products",
-      "post /v1/products"
+      "post /v1/products",
+      "get /v1/products/search",
+      "get /v1/products/searchMongo"
     ]
   }
 }

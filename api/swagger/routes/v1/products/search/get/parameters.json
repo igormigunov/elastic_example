@@ -1,0 +1,25 @@
+[
+  {
+    "name": "q",
+    "in": "query",
+    "description": "",
+    "type": "string",
+    "required": false
+  },
+  {
+    "name": "page",
+    "in": "query",
+    "description": "",
+    "type": "number",
+    "required": false,
+    "default": 1
+  },
+  {
+    "name": "limit",
+    "in": "query",
+    "description": "",
+    "type": "number",
+    "required": false,
+    "default": 10
+  }
+]
