@@ -1,0 +1,9 @@
+{
+  "tags": [
+    "stores"
+  ],
+  "summary": "GET - /v1/stores/search",
+  "produces": [
+    "application/json"
+  ]
+}

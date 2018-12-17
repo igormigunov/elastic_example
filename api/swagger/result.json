@@ -1,5 +1,5 @@
 {
-  "all": 7,
+  "all": 8,
   "empty": {
     "count": 1,
     "list": [
@@ -17,11 +17,12 @@
     ]
   },
   "withoutResponse": {
-    "count": 7,
+    "count": 8,
     "list": [
       "get /version",
       "get /v1/stores",
       "post /v1/stores",
+      "get /v1/stores/search",
       "get /v1/stores/{storeId}/",
       "patch /v1/stores/{storeId}/",
       "get /v1/products",

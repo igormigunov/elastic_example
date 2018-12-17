@@ -22,6 +22,41 @@ router
     }
   });
 router
+  .route('/search')
+  .get(celebrate(validators.search), async (req, res) => {
+    try {
+      const rawQuery = {
+        from: req.query.limit * (req.query.page - 1),
+        size: req.query.limit,
+        query: {
+          bool: {
+            must: {
+              query_string: {
+                query: req.query.q.trim(),
+                default_operator: 'AND',
+              },
+            },
+          },
+        },
+      };
+
+      StoreModel.esSearch(
+        rawQuery, {
+          hydrate: true,
+          hydrateWithESResults: true,
+          hydrateOptions: { lean: true },
+        },
+        (err, results) => {
+          if (err) return res.status(400).send(err);
+          res.send(results.hits);
+        },
+      );
+    } catch (err) {
+      res.boom.badRequest(err);
+    }
+  });
+
+router
   .route('/:storeId')
   .get(celebrate(validators.getById), async (req, res) => {
     try {

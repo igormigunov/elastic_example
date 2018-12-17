@@ -26,4 +26,11 @@ module.exports = {
     }).options({ stripUnknown: true }),
     body: storeJoiObject.options({ stripUnknown: true }),
   },
+  search: {
+    query: Joi.object({
+      q: Joi.string().required(),
+      page: Joi.number().default(1),
+      limit: Joi.number().default(10),
+    }).options({ stripUnknown: true }),
+  },
 };
