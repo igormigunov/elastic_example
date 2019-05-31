@@ -6,7 +6,7 @@ const timestamp = require('mongoose-timestamp');
 const storeSchema = new Mongoose.Schema({
   id: { type: Number },
   name: { type: String, es_indexed: true },
-  address: { type: String, es_indexed: true },
+  address: { type: String, es_indexed: true, es_type: 'text' },
   phone: { type: String },
 });
 
